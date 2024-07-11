@@ -1,19 +1,12 @@
 import { tv } from 'tailwind-variants'
 
-export const page = tv({
-  base: 'w-[1119px] h-[769px]'
-})
-
-export const pageHeader = tv({
-  base: 'flex justify-between items-center p-8'
-})
-
-export const container = tv({
-  base: 'w-[100%] h-[686px] flex p-6'
-})
-
 export const column = tv({
-  base: 'flex flex-1 flex-col relative m-3 bg-[#f5f6f6] rounded-lg'
+  base: 'flex flex-1 flex-col relative m-3 bg-[#f5f6f6] rounded-lg',
+  variants: {
+    isOver: {
+      true: 'shadow z-10'
+    }
+  }
 })
 
 export const columnHeader = tv({
